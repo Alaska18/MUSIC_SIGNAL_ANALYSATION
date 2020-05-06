@@ -1,0 +1,55 @@
+T = 
+         filename         tempo     spectral_centroid    spectral_bandwidth    rolloff    zero_crossing_rate
+    __________________    ______    _________________    __________________    _______    __________________
+
+    {'blues.00081.au'}    103.36         2116.9                1956.6          4196.1           0.12727     
+    {'blues.00022.au'}    95.703         1156.1                1497.7          2170.1          0.058613     
+    {'blues.00031.au'}       152         1331.1                1973.6          2900.2          0.042967     
+    {'blues.00012.au'}    184.57           1361                1567.8          2739.6          0.069124     
+    {'blues.00056.au'}     161.5         1811.1                2052.3          3927.8           0.07548     
+    {'blues.00058.au'}    107.67         2068.4                2033.9          4231.5           0.10437     
+    {'blues.00066.au'}     161.5         2340.4                2256.5          4972.5           0.12178     
+    {'blues.00060.au'}       152         1946.6                1979.9          3955.9          0.097454     
+    {'blues.00025.au'}    92.285         1109.6                1463.3          2243.6          0.051725     
+    {'blues.00014.au'}       152         1172.1                1705.8            2345          0.045046     
+
+
+MATLAB was unable to copy the entire selected output. Only the first 10 rows were copied
+model = 
+  ClassificationKNN
+           PredictorNames: {'tempo'  'spectral_centroid'  'spectral_bandwidth'  'rolloff'  'zero_crossing_rate'}
+             ResponseName: 'filename'
+    CategoricalPredictors: []
+               ClassNames: {1×1000 cell}
+           ScoreTransform: 'none'
+          NumObservations: 1199
+                 Distance: 'euclidean'
+             NumNeighbors: 1
+
+
+  Properties, Methods
+
+PredictSong = 1199×1 cell array    
+'blues.00081.au'    
+'blues.00022.au'    
+'blues.00031.au'    
+'blues.00012.au'    
+'blues.00056.au'    
+'blues.00058.au'    
+'blues.00066.au'    
+'blues.00060.au'    
+'blues.00025.au'    
+'blues.00014.au'    
+
+C = 1000×1000    
+     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     1     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
